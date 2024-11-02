@@ -1,0 +1,108 @@
+body {
+    background-color: pink;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #2E86C1;  /* Màu xanh của header */
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #2E86C1;  /* Màu xanh của footer */
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    min-height: calc(100vh - 120px); /* Trừ đi chiều cao của header và footer */
+    padding-top: 60px; /* Khoảng trống trên cho header */
+    padding-bottom: 40px; /* Khoảng trống dưới cho footer */
+    overflow-y: auto; /* Thêm thanh cuộn dọc khi nội dung lớn hơn */
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+    margin: auto;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header img {
+    height: 50px; /* Đặt chiều cao cho logo để phù hợp với header */
+    width: auto; /* Giữ tỷ lệ gốc của logo */
+    margin-right: 10px;
+}
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #fff;
+    flex-grow: 1; /* Cho phép h1 mở rộng khi cần để canh đều */
+}
+
+.header-links {
+    display: flex;
+    gap: 15px; /* Khoảng cách giữa các liên kết */
+}
+
+.header-links a {
+    color: #fff;
+    font-weight: bold; /* In đậm chữ */
+    text-decoration: none; /* Bỏ gạch chân */
+    padding: 5px 10px;
+}
+
+.header-links a:hover {
+    color: #d4e6f1; /* Màu nhạt hơn khi hover */
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
